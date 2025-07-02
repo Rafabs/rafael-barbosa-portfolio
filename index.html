@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+</head>
+
+<body>
+  <header>
+    | Olá, sou Rafael Barbosa
+  </header>
+
+  <!-- Menu de navegação principal -->
+  <nav>
+    <a href="#sobre">SOBRE MIM</a>
+    <a href="#formacao">FORMAÇÃO</a>
+    <a href="#portfolio">PORTFÓLIO</a>
+    <a href="#contato">CONTATO</a>
+  </nav>
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre">
+    <h2>| Sobre mim</h2>
+    <div class="sobre-container"> <!-- Container flexível para imagem e texto -->
+      <img src="imgs/RBDS.jpg" alt="Foto de Rafael Barbosa">
+      <p>
+        Sou apaixonado por tecnologia e trabalho como metroviário. Tenho um grande interesse por dados públicos,
+        especialmente sobre transporte urbano, e sempre busco novas formas de analisar e entender o setor.
+        Nas minhas horas vagas, gosto de praticar esportes e sou um entusiasta da fotografia, capturando momentos e
+        cenas do cotidiano.
+      </p>
+    </div>
+  </section>
+
+  <hr> <!-- Divisor visual -->
+
+  <!-- Seção Formação acadêmica -->
+  <section id="formacao">
+    <h2>| Minha formação</h2>
+
+    <!-- Item de formação -->
+    <div class="formacao-item">
+      <img src="/imgs/SENAI-logo.jpg" alt="Logo SENAI">
+      <div>
+        <strong>Eletricista de Manutenção</strong><br>
+        Escola SENAI “Roberto Simonsen<br>
+        <span class="concluido">Concluído em 2016</span>
+      </div>
+    </div>
+
+    <div class="formacao-item">
+      <img src="/imgs/IFSP-logo.jpg" alt="Logo IFSP">
+      <div>
+        <strong>Técnico em Telecomunicações</strong><br>
+        IFSP - Instituto Federal de Educação, Ciência e Tecnologia<br>
+        <span class="concluido">Concluído em 2018</span>
+      </div>
+    </div>
+
+    <div class="formacao-item">
+      <img src="/imgs/UNINTER-lo.jpg" alt="Logo UNINTER">
+      <div>
+        <strong>CST em Análise e Desenvolvimento de Sistemas</strong><br>
+        UNINTER - Centro Universitário Internacional<br>
+        <span class="cursando">Cursando | Conclusão prevista para 2027</span>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  
+  <!-- Seção Portfólio -->
+  <section id="portfolio">
+    <h2>| Meu portfólio</h2>
+    <div class="projetos-container">
+      <article class="projeto">
+        <img src="/imgs/SP4U.gif" alt="Logo projeto SP4U">
+        <h3>SP4U</h3>
+        <p>
+          Projeto simples de dados abertos sobre transporte público Metroviário, Metrorodoviário e Metropolitano do
+          Estado de São Paulo.
+        </p>
+        <a href="https://github.com/Rafabs/SP-4-u" target="_blank">Acesse este projeto</a>
+      </article>
+
+      <!-- Item dos projetos -->
+      <article class="projeto">
+        <img src="/imgs/fii.jpg" alt="Logo projeto Fii-PY">
+        <h3>fII-PY</h3>
+        <p>
+          Análise de Fundos Imobiliários (FIIs). O aplicativo permite que o usuário insira os dados de um FII, como código do fundo, valor de compra, valor de venda e quantidade de cotas, e calcula o valor atual do fundo, o ponto médio da operação e o lucro ou prejuízo da transação.
+        </p>
+        <a href="https://github.com/Rafabs/Fii-Py" target="_blank">Acesse este projeto</a>
+      </article>
+
+      <article class="projeto">
+        <img src="/imgs/run-pace-logo.jpg" alt="Logo projeto run-pace">
+        <h3>Run Pace</h3>
+        <p>
+          Projeto em Desenvolvimento com o objetivo de ser um site de busca e consulta de eventos como corrida, ciclismo entre outros esportes.
+        </p>
+        <a href="https://github.com/Rafabs/run_pace" target="_blank">Acesse este projeto</a>
+      </article>
+
+      <article class="projeto">
+        <img src="/imgs/GITHUB-log.jpg" alt="Logo projeto github">
+        <h3>GitHub</h3>
+        <p>
+          Acesse minha página no GitHub para saber mais.
+        </p>
+        <a href="https://github.com/Rafabs" target="_blank">Clique aqui</a>
+      </article>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Seção de Contato -->
+  <section id="contato">
+    <h2>| Entre em contato</h2>
+    <form onsubmit="enviarMensagem(event)"> <!-- Formulário com handler JS -->
+      <input type="text" placeholder="Nome" required> <!-- Campo obrigatório -->
+      <input type="email" placeholder="E-mail" required>
+      <textarea rows="5" placeholder="Mensagem" required></textarea>
+      <label><input type="checkbox"> Salvar meus dados para a próxima vez</label>
+      <button type="submit">Enviar</button>
+      <p id="mensagem-enviada" style="display: none; color: green;">Mensagem enviada com sucesso!</p> 
+    </form>
+  </section>
+</body>
+
+</html>
